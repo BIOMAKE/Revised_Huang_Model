@@ -25,9 +25,9 @@ elseif pc == 0
     C = 3;
 end
 k = 1.2; %decay constant of calcium level after each burst
-Rf = 1.55; %proportionality constant of facilitation
+Rf = 1.44; %proportionality constant of facilitation
 fk = 0.005/C; %decay constant of facilitation
-Ri = 0.12/C^2; %proportionality constant of inhibition
+Ri = 0.127/C^2; %proportionality constant of inhibition
 ik = 0.07/C^2; %decay constant of inhibition
 bk = 0.1; %decay constant for the declines between trains in iTBS and imTBS
 
@@ -196,37 +196,3 @@ xlim([0,3300])
 
 ylabel('STAGE III:','FontSize',15)
 xlabel('Time in Second')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
