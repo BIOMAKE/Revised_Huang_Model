@@ -44,7 +44,11 @@ for n = 1:Bt
     
     %%% STAGE II: Facilitation/Inhibition substances (min) %%%
     %Facilitation
-    Fmin(n+1) = (Rf*(Cmin(n+1)-Cmin(n)) + Fmin(n))*exp(-fk);
+    if n == 1
+        Fmin(n+1) = Rf*Cmin(n+1)*exp(-fk);
+    else
+        Fmin(n+1) = (Rf*(Cmin(n+1)-Cmin(n)) + Fmin(n))*exp(-fk);
+    end
 
     %Inhibition
     Imin(n+1) = (Ri*Cmin(n+1)+Imin(n))*exp(-ik);
@@ -196,37 +200,5 @@ xlim([0,3300])
 
 ylabel('STAGE III:','FontSize',15)
 xlabel('Time in Second')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
