@@ -15,7 +15,7 @@ Theta-burst stimulation (TBS), a patterned form of repetitive transcranial magne
     * `PlotFittingCurve.m`: it plots the after-effect curves for a given set of parameters of Stage II.
 
 ## Code Summary
-This code project implements the non-convex optimisation problem.
+This code project implements a non-convex optimisation problem.
 1. `FourPara_Calibration_LM.m`: this code file aims to optimise the parameters of Stage II by using the Levenberg-Marquardt algorithm as implemented in Matlab (v2021b,
 The Mathworks, USA).
 2. `PlotFigures_PC.m`, `PlotFigures_AC.m`, `PlotFigures_noPC.m`: these code files aim to plot the after-effect curves for both initial and revised models for given TBS protocols.
