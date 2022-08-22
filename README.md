@@ -18,7 +18,8 @@ Theta-burst stimulation (TBS), a patterned form of repetitive transcranial magne
 This code project implements a non-convex optimisation problem.
 1. `FourPara_Calibration_LM.m`: this code file aims to optimise the parameters of Stage II by using the Levenberg-Marquardt algorithm as implemented in Matlab (v2021b,
 The Mathworks, USA).
-2. `PlotFigures_PC.m`, `PlotFigures_AC.m`, `PlotFigures_noPC.m`: these code files aim to plot the after-effect curves for both initial and revised models for given TBS protocols. `_PC` is for protocols with prior contraction plots; `_AC` is for protocols with post contraction plots; `_noPC` is for protocols without prior contraction plots.
-3. `PredictionAccuracyAnalysis.m`: this code file aims to analyse the prediction accuracy of the revised model in terms of root-mean-square error (RMSE), pseudo R squared (R^2) for nonlinear models, and the distribution of prediction errors.
-4. `HuangModel_Initial.m`: this code file is the initial model code programmed by Huang et al,.
-5. `HuangModel_Revised.m`: this code file is the revised model with the optimised parameters of Stage II.
+2. 'FourPara_Calibration_Swarm.m': this code file aims to optimise the parameters of Stage II by using the Particle swarm algorithm as implemented in Matlab (v2021b, The Mathworks, USA).
+3. `PlotFigures_PC.m`, `PlotFigures_AC.m`, `PlotFigures_noPC.m`: these code files aim to plot the after-effect curves for both initial and revised models for given TBS protocols. `_PC` is for protocols with prior contraction plots; `_AC` is for protocols with post contraction plots; `_noPC` is for protocols without prior contraction plots.
+4. `PredictionAccuracyAnalysis.m`: this code file aims to analyse the prediction accuracy of the revised model in terms of root-mean-square error (RMSE), pseudo R squared (R^2) for nonlinear models, and the distribution of prediction errors.
+5. `HuangModel_Initial.m`: this code file is the initial model code programmed by Huang et al,.
+6. `HuangModel_Revised.m`: this code file is the revised model with the optimised parameters of Stage II.
