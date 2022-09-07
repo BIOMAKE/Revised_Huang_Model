@@ -48,7 +48,7 @@ L1 = diag(ones(1,n)) + diag(-ones(1,n-1),1);
 L1 = L1(1:n-1,:);
 
 %define the cost function
-reg = 0;
+reg = 1;
 sigma = 0;
 J = @(x) sumCostFun(protocols, C1, C2, h1in, h2in, k1in, k2in, h1fa, h2fa, k1fa, k2fa, k, bk, ...
     x(1), x(2), x(3), x(4)) + reg*(norm(x))^2 + sigma*(norm(L1*x'))^2;
@@ -115,26 +115,3 @@ for i = 1:length(protocols)
 end
 
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
